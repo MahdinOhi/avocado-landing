@@ -1,13 +1,17 @@
-// components/SignUpButton.jsx
-import Link from "next/link";
+import Link from 'next/link';
 
-export default function SignUpButton() {
+// SignUpButton Component
+const SignUpButton = () => {
     return (
-        <Link
-            href="/signup"
-            className="bg-lime-200 text-orange-600 font-semibold px-6 py-2 rounded-full transition-transform transform hover:scale-105"
-        >
-            Sign up
+        <Link href="/signup">
+            <button
+                className="bg-yellow-200 text-black px-6 py-2 rounded-full font-medium 
+                 transition-transform duration-300 hover:scale-105"
+            >
+                Sign up
+            </button>
         </Link>
     );
-}
+};
+
+export default SignUpButton;

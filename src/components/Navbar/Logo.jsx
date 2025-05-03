@@ -1,8 +1,12 @@
-// components/Logo.jsx
-export default function Logo() {
+import Link from 'next/link';
+
+// Logo Component
+const Logo = () => {
     return (
-        <div className="text-xl font-bold tracking-tight font-mono text-gray-800">
-            Avocado Inc.
-        </div>
+        <Link href="/" className="flex items-center font-bold text-xl">
+            <span className="font-black">Avocado Inc.</span>
+        </Link>
     );
-}
+};
+
+export default Logo;

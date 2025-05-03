@@ -1,25 +1,27 @@
-// components/NavLinks.jsx
-import Link from "next/link";
+import Link from 'next/link';
 
-export default function NavLinks() {
+// NavLinks Component
+const NavLinks = () => {
     const links = [
-        { href: "/about", label: "About Us" },
-        { href: "/blogs", label: "Blogs" },
-        { href: "/pricing", label: "Pricing" },
-        { href: "/faqs", label: "FAQs" },
+        { name: 'About Us', path: '/about' },
+        { name: 'Blogs', path: '/blogs' },
+        { name: 'Pricing', path: '/pricing' },
+        { name: 'FAQs', path: '/faqs' },
     ];
 
     return (
-        <nav className="flex space-x-6">
-            {links.map(({ href, label }) => (
+        <div className="hidden md:flex space-x-8">
+            {links.map((link) => (
                 <Link
-                    key={href}
-                    href={href}
-                    className="text-black text-sm font-medium hover:text-gray-700"
+                    key={link.name}
+                    href={link.path}
+                    className="text-black hover:text-gray-700 transition-colors duration-200"
                 >
-                    {label}
+                    {link.name}
                 </Link>
             ))}
-        </nav>
+        </div>
     );
-}
+};
+
+export default NavLinks;
