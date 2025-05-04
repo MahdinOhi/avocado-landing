@@ -1,7 +1,9 @@
+import SubtitleBadge from '@/components/SubtitleBadge';
+
 export default function HomePage() {
   return (
-    <div>
-      <h1>Hello, Welcome to Avocado!</h1>
-    </div>
+    <main className="flex items-center justify-center">
+      <SubtitleBadge />
+    </main>
   );
 }

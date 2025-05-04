@@ -12,9 +12,8 @@ const Navbar = () => {
 
     return (
         <div className="relative w-full">
-            <nav className="bg-cream-50 bg-opacity-90 shadow-md py-4 px-6 flex items-center justify-between max-w-7xl mx-auto">
+            <nav className="bg-cream-50 bg-opacity-90 shadow-md py-4 px-6 flex items-center justify-between rounded-[40px] w-[46%] my-[1%] bg-[antiquewhite] mx-auto">
                 <Logo />
-
                 {/* Mobile menu button */}
                 <div className="md:hidden">
                     <button
